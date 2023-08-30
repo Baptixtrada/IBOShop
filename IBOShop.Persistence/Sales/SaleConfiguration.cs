@@ -2,12 +2,25 @@ using IBOShop.Domain.Sales;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace IBOShop.Persistence.Sales;
-
-public class SaleConfiguration : IEntityTypeConfiguration<Sale>
+namespace IBOShop.Persistence.Sales
 {
-    public void Configure(EntityTypeBuilder<Sale> builder)
+    public class SaleConfiguration : IEntityTypeConfiguration<Sale>
     {
-        throw new NotImplementedException();
+        public void SaleConfiguration()
+        {
+            HasKey(p => p.Id);
+            Property(p => p.Date)
+                .IsRequired();
+
+            HasRequired(p => p.Customer);
+
+            HasRequired(p => p.Employee);
+
+            HasRequired(p => p.Product);
+
+            Property(p => p.TotalPrice)
+                .IsRequired()
+                .HasPrecision(5, 2);
+        }
     }
 }
