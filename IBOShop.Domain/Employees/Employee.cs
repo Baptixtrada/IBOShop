@@ -4,6 +4,7 @@ namespace IBOShop.Domain.Employees
 {
     public class Employee : IEntity
     {
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Id { get ; set ; }
+        public string Name { get; set; }
     }
 }
