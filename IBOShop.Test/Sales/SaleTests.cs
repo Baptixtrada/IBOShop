@@ -1,14 +1,16 @@
+using IBOShop.Domain.Sales;
+
 namespace IBOShop.Test.Sales
 {
     public class SaleTests
     {
         private readonly Sale _sale;
-        public SetUp()
+        public SaleTests()
         {
             _sale = new Sale();
         }
         [Test]
-        public TestSetAndGetId(int Id)
+        public void TestSetAndGetId(int Id)
         {
             _sale.Id = Id;
             Assert.That(_sale.Id, Is.EqualTo(Id));
