@@ -6,10 +6,11 @@ namespace IBOShop.Persistence.Customers
 {
     public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     {
-        public void CustomerConfiguration()
+        public void Configure(EntityTypeBuilder<Customer> builder)
         {
-            HasKey(p => p.Id);
-            Property(p => p.Name).IsRequired().HasMaxLength(50);
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
+            builder.HasData(new Customer() { Id = 1, Name = "Baptiste Grosjean" });
         }
     }
 }
