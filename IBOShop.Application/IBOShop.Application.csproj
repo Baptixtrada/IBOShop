@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\IBOShop.Domain\IBOShop.Domain.csproj" />
+      <ProjectReference Include="..\IBOShop.Common\IBOShop.Common.csproj" />
     </ItemGroup>
 
 </Project>
