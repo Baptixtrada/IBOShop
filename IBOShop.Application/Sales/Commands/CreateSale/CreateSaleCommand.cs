@@ -11,9 +11,9 @@ namespace IBOShop.Application.Sales.Commands.CreateSale
 
         public CreateSaleCommand(IDateService dateService, IDatabaseService databaseService, IInventoryService inventoryService)
         {
-            this._dateService = dateService;
-            this._databaseService = databaseService;
-            this._inventoryService = inventoryService;
+            _dateService = dateService;
+            _databaseService = databaseService;
+            _inventoryService = inventoryService;
         }
 
         public void Execute(CreateSaleModel model)

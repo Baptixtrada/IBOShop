@@ -1,5 +1,4 @@
 using IBOShop.Application.Interfaces;
-using IBOShop.Domain.Sales;
 
 namespace IBOShop.Application.Sales.Queries.GetSalesList
 {
@@ -12,7 +11,7 @@ namespace IBOShop.Application.Sales.Queries.GetSalesList
         }
         public List<SalesListModel> Execute()
         {
-            var sales = _databaseService.Sales.Select(p => new Sale() { Id = p.Id, Date = p.Date });
+            var sales = _databaseService.Sales.Select(p => new SalesListModel() { Id = p.Id, Date = p.Date });
             return sales.ToList();
         }
     }
