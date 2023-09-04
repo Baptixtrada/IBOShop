@@ -2,10 +2,10 @@ using IBOShop.Domain.Common;
 
 namespace IBOShop.Domain.Products
 {
-    public class Product : IEntity, IProductEntity
+    public class Product : IProduct
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
+        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public decimal Price { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

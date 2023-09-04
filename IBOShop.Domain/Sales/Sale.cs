@@ -5,7 +5,7 @@ using IBOShop.Domain.Products;
 
 namespace IBOShop.Domain.Sales
 {
-    public class Sale : IEntity
+    public class Sale : ISale
     {
         private int _quantity;
         private decimal _totalPrice;

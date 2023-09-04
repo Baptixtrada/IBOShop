@@ -1,6 +1,6 @@
 namespace IBOShop.Application.Sales.Commands.CreateSale
 {
-    public class CreateSaleModel
+    public class CreateSaleModel : ICreateSaleModel
     {
         public int CustomerId { get; set; }
         public int EmployeeId { get; set; }

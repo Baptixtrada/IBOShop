@@ -2,18 +2,31 @@ using IBOShop.Domain.Customers;
 
 namespace IBOShop.Test.Customers
 {
-    public class CustomerTests
+    [TestFixture]
+    public class CustomerTests : ICustomerTests
     {
-        private readonly Customer _customer;
-        public CustomerTests()
+        private Customer _customer;
+
+        [SetUp]
+        public void Setup()
         {
             _customer = new Customer();
         }
-        [Test]
+        [TestCase(1)]
+        [TestCase(2)]
+        [TestCase(3)]
         public void TestSetAndGetId(int Id)
         {
             _customer.Id = Id;
             Assert.That(_customer.Id, Is.EqualTo(Id));
+        }
+        [TestCase("John")]
+        [TestCase("Jane")]
+        [TestCase("Doe")]
+        public void TestSetAndGetName(string name)
+        {
+            _customer.SetName(name);
+            Assert.That(_customer.GetName(), Is.EqualTo(name));
         }
     }
 }
