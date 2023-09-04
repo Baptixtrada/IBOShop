@@ -15,4 +15,10 @@
       <ProjectReference Include="..\IBOShop.Common\IBOShop.Common.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Sales\Commands\CreateSale\Factory\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Sales\Commands\CreateSale\Factory\" />
+    </ItemGroup>
 </Project>
