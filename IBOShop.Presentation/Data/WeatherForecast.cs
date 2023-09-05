@@ -1,8 +1,8 @@
-namespace IBOShop.Presentation.Data;
+﻿namespace IBOShop.Presentation.Data;
 
 public class WeatherForecast
 {
-    public DateOnly Date { get; set; }
+    public DateTime Date { get; set; }
 
     public int TemperatureC { get; set; }
 
@@ -10,3 +10,4 @@ public class WeatherForecast
 
     public string? Summary { get; set; }
 }
+

@@ -1,77 +1,47 @@
-﻿<Properties StartupConfiguration="{BD8B59CB-7379-4AE3-AD8F-CD8DE125BC4B}|Default" GitUserInfo="UsingMD">
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{BD8B59CB-7379-4AE3-AD8F-CD8DE125BC4B}|Default">
+  <MonoDevelop.Ide.ItemProperties.IBOShop.Presentation FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IBOShop.Test/Sales/CreateSaleTests.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IBOShop.Application/Sales/Queries/GetSaleDetail/SaleDetailModel.cs">
     <Files>
-      <File FileName="IBOShop.Test/Customers/CustomerTests.cs" Line="6" Column="48" />
-      <File FileName="IBOShop.Test/Customers/ICustomerTests.cs" Line="7" Column="38" />
-      <File FileName="IBOShop.Test/Employees/EmployeeTests.cs" Line="7" Column="24" />
-      <File FileName="IBOShop.Test/Employees/IEmployeeTests.cs" Line="6" Column="6" />
-      <File FileName="IBOShop.Test/Products/ProductTests.cs" Line="7" Column="24" />
-      <File FileName="IBOShop.Test/Products/IProductTests.cs" Line="6" Column="6" />
-      <File FileName="IBOShop.Test/Sales/SaleTests.cs" Line="10" Column="24" />
-      <File FileName="IBOShop.Test/Sales/ISaleTests.cs" Line="7" Column="22" />
-      <File FileName="IBOShop.Test/Common/ITest.cs" Line="7" Column="19" />
-      <File FileName="IBOShop.Test/IBOShop.Test.csproj" Line="1" Column="1" />
+      <File FileName="IBOShop.Domain/Employees/Employee.cs" Line="8" Column="23" />
+      <File FileName="IBOShop.Domain/Customers/Customer.cs" Line="8" Column="23" />
+      <File FileName="IBOShop.Domain/Products/Product.cs" Line="8" Column="23" />
+      <File FileName="IBOShop.Application/Sales/Queries/GetSaleDetail/SaleDetailModel.cs" Line="9" Column="48" />
+      <File FileName="IBOShop.Application/Sales/Queries/GetSalesList/SalesListModel.cs" Line="14" Column="2" />
+      <File FileName="IBOShop.Application/Sales/Queries/GetSalesList/GetSalesListQuery.cs" Line="1" Column="1" />
       <File FileName="IBOShop.Application/Sales/Commands/CreateSale/CreateSaleModel.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Application/Sales/Queries/GetSalesList/SalesListModel.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Domain/Customers/Customer.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Domain/Products/Product.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Domain/Sales/Sale.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Application/Sales/Commands/CreateSale/ICreateSaleModel.cs" Line="10" Column="2" />
-      <File FileName="IBOShop.Domain/Customers/ICustomer.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Domain/Employees/IEmployee.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Domain/Products/IProduct.cs" Line="6" Column="6" />
-      <File FileName="IBOShop.Domain/Sales/ISale.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Application/Sales/Commands/CreateSale/ICreateSaleCommand.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Application/Sales/Commands/CreateSale/Factory/SaleFactory.cs" Line="9" Column="24" />
-      <File FileName="IBOShop.Application/Sales/Commands/CreateSale/CreateSaleCommand.cs" Line="39" Column="2" />
-      <File FileName="IBOShop.Application/Sales/Commands/CreateSale/Factory/ISaleFactory.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Test/Sales/CreateSaleTests.cs" Line="23" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="IBOShop">
+          <Node name="IBOShop" selected="True">
             <Node name="IBOShop.Application">
               <Node name="Sales">
-                <Node name="Commands">
-                  <Node name="CreateSale">
-                    <Node name="Factory" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="Queries" expanded="True">
-                  <Node name="GetSalesList" expanded="True" />
+                <Node name="Commands" expanded="True">
+                  <Node name="CreateSale" expanded="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="IBOShop.Common">
-              <Node name="Date" expanded="True" />
-            </Node>
-            <Node name="IBOShop.Domain">
+            <Node name="IBOShop.Domain" expanded="True">
               <Node name="Customers" expanded="True" />
               <Node name="Employees" expanded="True" />
               <Node name="Products" expanded="True" />
-              <Node name="Sales" expanded="True" />
-            </Node>
-            <Node name="IBOShop.Test">
-              <Node name="Dependencies" expanded="True" selected="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
-              <Node name="Common" expanded="True" />
-              <Node name="Customers" expanded="True" />
-              <Node name="Employees" expanded="True" />
-              <Node name="Products" expanded="True" />
-              <Node name="Sales" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="IBOShop" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.IBOShop.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.IBOShop.Test PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
