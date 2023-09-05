@@ -1,3 +1,5 @@
+using IBOShop.Application.Interfaces;
+
 namespace IBOShop.Application.Sales.Queries.GetSaleDetail
 {
     public class GetSaleDetailQuery : IGetSaleDetailQuery
@@ -13,9 +15,9 @@ namespace IBOShop.Application.Sales.Queries.GetSaleDetail
             {
                 Id = p.Id,
                 Date = p.Date,
-                CustomerName = p.Customer.Name,
-                EmployeeName = p.Employee.Name,
-                ProductName = p.Product.Name,
+                CustomerName = p.Customer!.Name,
+                EmployeeName = p.Employee!.Name,
+                ProductName = p.Product!.Name,
                 UnitPrice = p.UnitPrice,
                 Quantity = p.Quantity,
                 TotalPrice = p.TotalPrice

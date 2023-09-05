@@ -21,7 +21,7 @@ namespace IBOShop.Test.Sales
 		private AutoMocker _autoMocker;
 		private CreateSaleModel _createSaleModel;
 		private Sale _sale;
-		private readonly IDateService _dateService;
+		private IDateService _dateService;
 		private DateTime _date;
 		private const int _customerId = 1;
 		private const int _employeeId = 2;
@@ -32,6 +32,7 @@ namespace IBOShop.Test.Sales
 		[SetUp]
 		public void SetUp()
 		{
+			_dateService = new DateService();
 			_date = _dateService.GetDate();
 			Customer customer = new Customer() { Id = _customerId };
 			Employee employee = new Employee() { Id = _employeeId };

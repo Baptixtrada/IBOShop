@@ -10,11 +10,13 @@ namespace IBOShop.Test.Sales
     public class SaleTests : ISaleTests
     {
         private Sale _sale;
-        private readonly DateService _dateService;
+        private DateService _dateService;
         [SetUp]
         public void Setup()
         {
             _sale = new Sale();
+            _dateService = new DateService();
+
         }
         [TestCase(1)]
         [TestCase(2)]

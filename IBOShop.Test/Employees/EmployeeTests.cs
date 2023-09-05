@@ -26,8 +26,8 @@ namespace IBOShop.Test.Employees
         [TestCase("Doe")]
         public void TestSetAndGetName(string name)
         {
-            _employee.SetName(name);
-            Assert.That(_employee.GetName(), Is.EqualTo(name));
+            _employee.Name  = name;
+            Assert.That(_employee.Name, Is.EqualTo(name));
         }
     }
 }
