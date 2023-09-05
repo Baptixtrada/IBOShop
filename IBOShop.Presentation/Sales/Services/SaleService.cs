@@ -10,7 +10,7 @@ namespace IBOShop.Presentation.Sales.Services
             "Apple", "Banana", "Cherry", "Orange", "Pear"
         };
 
-        public Task<SaleModel[]> GetSalesAsync(DateTime startDate)
+        public Task<SaleModel[]> GetSalesAsync()
         {
             return Task.FromResult(Enumerable.Range(1, 5).Select(index => new SaleModel
             {

@@ -2,8 +2,8 @@
 
 <PageTitle>Sales Information</PageTitle>
 
-@using IBOShop.Presentation.Sales.Services
 @using IBOShop.Presentation.Sales.Models
+@using IBOShop.Presentation.Sales.Services
 @inject SaleService SaleService
 
 <h1>Sales Information</h1>
@@ -46,6 +46,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        sales = await SaleService.GetSalesAsync(DateTime.Now);
+        sales = await SaleService.GetSalesAsync();
     }
 }
