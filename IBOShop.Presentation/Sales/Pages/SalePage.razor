@@ -1,0 +1,51 @@
+﻿@page "/sales"
+
+<PageTitle>Sales Information</PageTitle>
+
+@using IBOShop.Presentation.Sales.Services
+@using IBOShop.Presentation.Sales.Models
+@inject SaleService SaleService
+
+<h1>Sales Information</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (sales == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sale in sales)
+            {
+                <tr>
+                    <td>@sale.Id</td>
+                    <td>@sale.ProductName</td>
+                    <td>@sale.Quantity</td>
+                    <td>@sale.Price</td>
+                    <td>@(sale.Quantity * sale.Price)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private SaleModel[]? sales;
+
+    protected override async Task OnInitializedAsync()
+    {
+        sales = await SaleService.GetSalesAsync(DateTime.Now);
+    }
+}
