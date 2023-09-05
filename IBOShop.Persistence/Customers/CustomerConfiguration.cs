@@ -10,7 +10,7 @@ namespace IBOShop.Persistence.Customers
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
-            builder.HasData(new Customer() { Id = 1, Name = "Baptiste Grosjean" });
+            builder.HasData(new Customer() { Id = 1, Name = "Baptiste Grosjean" }, new Customer() { Id = 2, Name="Xtrada" }, new Customer() { Id=3, Name= "Okay"}) ;
         }
     }
 }

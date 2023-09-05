@@ -45,14 +45,14 @@ namespace IBOShop.Test.Sales
 			_autoMocker.GetMock<IDatabaseService>().Setup(p => p.Employees).ReturnsDbSet(new List<Employee> { employee });
 			_autoMocker.GetMock<IDatabaseService>().Setup(p => p.Products).ReturnsDbSet(new List<Product> { product });
 			_autoMocker.GetMock<IDatabaseService>().Setup(p => p.Sales).Returns(_autoMocker.GetMock<DbSet<Sale>>().Object);
-			_autoMocker.GetMock<ISaleFactory>()
-	.Setup(p => p.Create(
-		_date,
-		customer,
-		employee,
-		product,
-		_quantity))
-	.Returns(_sale);
+            _autoMocker.GetMock<ISaleFactory>()
+						.Setup(p => p.Create(
+							_date,
+							customer,
+							employee,
+							product,
+							_quantity))
+                        .Returns(_sale);
 
 			_createSaleCommand = _autoMocker.CreateInstance<CreateSaleCommand>();
 		}

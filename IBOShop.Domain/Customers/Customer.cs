@@ -4,7 +4,7 @@ namespace IBOShop.Domain.Customers
 {
     public class Customer : ICustomer
     {
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Id { get ; set; }
+        public string Name { get ; set; }
     }
 }

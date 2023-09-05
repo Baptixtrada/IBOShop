@@ -1,6 +1,6 @@
 namespace IBOShop.Application.Sales.Queries.GetSalesList
 {
-    public class SalesListModel
+    public class SalesListModel : ISalesListModel
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }

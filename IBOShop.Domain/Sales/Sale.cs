@@ -10,11 +10,11 @@ namespace IBOShop.Domain.Sales
         private decimal _totalPrice;
         private decimal _unitPrice;
 
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime Date { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Customer? Customer { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Employee? Employee { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Product? Product { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Id { get; set; }
+        public DateTime Date { get; set; }
+        public Customer? Customer { get; set; }
+        public Employee? Employee { get; set; }
+        public Product? Product { get; set; }
         public decimal UnitPrice
         {
             get { return _unitPrice; }
