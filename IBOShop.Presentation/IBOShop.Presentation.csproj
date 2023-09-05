@@ -8,6 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Products\" />
+    <None Remove="Customers\" />
+    <None Remove="Employees\" />
+    <None Remove="Sales\" />
+    <None Remove="Products\Services\" />
+    <None Remove="Products\Models\" />
+    <None Remove="Sales\Services\" />
+    <None Remove="Sales\Models\" />
+    <None Remove="Sales\Pages\" />
+    <None Remove="Products\Pages\" />
+    <None Remove="Customers\Models\" />
+    <None Remove="Customers\Pages\" />
+    <None Remove="Customers\Services\" />
+    <None Remove="Employees\Models\" />
+    <None Remove="Employees\Pages\" />
+    <None Remove="Employees\Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
   </ItemGroup>
 
@@ -19,4 +37,27 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.21" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Products\" />
+    <Folder Include="Customers\" />
+    <Folder Include="Employees\" />
+    <Folder Include="Sales\" />
+    <Folder Include="Products\Services\" />
+    <Folder Include="Products\Models\" />
+    <Folder Include="Sales\Services\" />
+    <Folder Include="Sales\Models\" />
+    <Folder Include="Sales\Pages\" />
+    <Folder Include="Products\Pages\" />
+    <Folder Include="Customers\Models\" />
+    <Folder Include="Customers\Pages\" />
+    <Folder Include="Customers\Services\" />
+    <Folder Include="Employees\Models\" />
+    <Folder Include="Employees\Pages\" />
+    <Folder Include="Employees\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IBOShop.Application\IBOShop.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
