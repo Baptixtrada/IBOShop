@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using IBOShop.Presentation.Areas.Identity;
 using IBOShop.Presentation.Data;
+using IBOShop.Presentation.Sales.Services;
+using IBOShop.Presentation.Products.Services;
+using IBOShop.Presentation.Customers.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +22,10 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
+builder.Services.AddScoped<SaleService>();
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<CustomerService>();
+
 builder.Services.AddSingleton<WeatherForecastService>();
 
 var app = builder.Build();
