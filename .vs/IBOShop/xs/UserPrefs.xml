@@ -1,38 +1,13 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{BD8B59CB-7379-4AE3-AD8F-CD8DE125BC4B}|Default">
-  <MonoDevelop.Ide.ItemProperties.IBOShop.Presentation FirstBuild="True" />
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{37790BB0-D0D8-4ABE-BDB1-937E2B4923E8}|Default">
+  <MonoDevelop.Ide.ItemProperties.IBOShop.Presentation PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IBOShop.Application/Sales/Queries/GetSaleDetail/SaleDetailModel.cs">
-    <Files>
-      <File FileName="IBOShop.Domain/Employees/Employee.cs" Line="8" Column="23" />
-      <File FileName="IBOShop.Domain/Customers/Customer.cs" Line="8" Column="23" />
-      <File FileName="IBOShop.Domain/Products/Product.cs" Line="8" Column="23" />
-      <File FileName="IBOShop.Application/Sales/Queries/GetSaleDetail/SaleDetailModel.cs" Line="9" Column="48" />
-      <File FileName="IBOShop.Application/Sales/Queries/GetSalesList/SalesListModel.cs" Line="14" Column="2" />
-      <File FileName="IBOShop.Application/Sales/Queries/GetSalesList/GetSalesListQuery.cs" Line="1" Column="1" />
-      <File FileName="IBOShop.Application/Sales/Commands/CreateSale/CreateSaleModel.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="IBOShop" selected="True">
-            <Node name="IBOShop.Application">
-              <Node name="Sales">
-                <Node name="Commands" expanded="True">
-                  <Node name="CreateSale" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="IBOShop.Domain" expanded="True">
-              <Node name="Customers" expanded="True" />
-              <Node name="Employees" expanded="True" />
-              <Node name="Products" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State name="__root__" />
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
